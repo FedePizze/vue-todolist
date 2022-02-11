@@ -25,7 +25,7 @@
                 <nav v-if="toDoArrey.length">
                     <ul>
                         <li v-for="(elemento, index) in toDoArrey">
-                            <h4 @click="barra(index)" :class="barrato">{{elemento}}</h4>
+                            <h4 @click="barra(index)" :class="(elemento.done == true ? 'barrato' : 'nonBarrato')">{{elemento.text}}</h4>
                             <i @click="removeItem(index)" class="fa-solid fa-xmark"></i>
                         </li>
                        
