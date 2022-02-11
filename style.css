@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+header{
+    padding: 20px 0px;
+    text-align: center;
+}
+
+header input, header button{
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+
+main{
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+main nav {
+    background-color: rgb(239, 245, 245);
+}
+
+main ul{
+    padding: 20px 40px;
+}
+
+main li{
+    list-style: none;
+    padding: 10px 0px;
+    border-bottom: 2px solid rgb(151, 151, 151);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.fa-xmark{
+    font-size: 30px;
+}
+
+.fa-xmark:hover{
+    color: red;
+}
+
+.barrato{
+    text-decoration: line-through;
+}
+
+.nonBarrato{
+    text-decoration: none;
+}
