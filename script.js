@@ -4,41 +4,30 @@ const app = new Vue({
         data: {
             toDoArrey: [],
             toDoText: '',
-            barrato: '',
         },
 
         methods: {
 
             add() {
-                if (this.toDoText == ''){
+                if (this.toDoText != ''){
 
-                    this.toDoText = ''
-                } else {
+                    const Obj = {
+                        text: this.toDoText,
+                        done: false
+                    }
 
-                    this.toDoArrey.push(this.toDoText),
+                    this.toDoArrey.push(Obj),
                     this.toDoText = ''
+
                 }
-                
             },
 
             removeItem(index) {
                 this.toDoArrey.splice(index, 1)
             },
 
-            
-
-            barra() {
-                if(this.aaa == true) {
-
-                    this.aaa = false
-                    this.barrato = 'barrato'
-
-                } else {
-
-                    this.aaa = true
-                    this.barrato = 'nonBarrato'
-                    
-                }
+            barra(index) {
+                this.toDoArrey[index].done = !this.toDoArrey[index].done
             },
 
         },
